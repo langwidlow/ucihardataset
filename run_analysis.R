@@ -1,6 +1,6 @@
 #This code assumes that you set the working directory to the
 #"UCI HAR Dataset" extracted folder.
-
+#This code also assumes you have installed and loaded the "dplyr" package.
 #Read the raw datasets into R.
 
 #Read labels of activity into table.
@@ -56,12 +56,6 @@ labelmergeset <- merge(combineset, labels, by.x="Activity",by.y="V1")
 
 #Drop the first column which has the activity numbers not the actual text names.
 removeactnumber<-labelmergeset[,-1]
-
-#Install dplyr a data manipulation package to use the summarise_each function below.
-install.packages("dplyr")
-
-#Load dplyr
-library(dplyr)
 
 #Create a summary datatable that calculates the average for each variable for each person for each activity.
 tidyset<-summarise_each(group_by(removeactnumber,Subject,V2), funs(mean))
