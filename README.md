@@ -8,11 +8,11 @@ In this repository there are 3 files:
 2. Codebook.md
 3. run_analysis.R
 
-The codebook list the variables (type, units) in the data table "tidyset" that results from sourcing the run_analysis.R script. The codebook also describes the process used to prepare a tidy data set from the raw data. The details for code operations is commented in the run_analysis.R.
+The codebook list the variables (type, units) in the data table "UCIHARtidyDataSet" that results from sourcing the run_analysis.R script. The codebook also describes the process used to prepare a tidy data set from the raw data. The details for code operations is commented in the run_analysis.R.
 
 run_analysis.R is the script that performs the operations to output a tidy data set. Prior to running the script you will need to download the data file here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. This script also assumes you have set your working directory to the "UCI HAR Dataset" folder from the extracted zip.
 
-Included below is quote describing the original research and data collection. Further information can be found in the file download.
+Included below is quote from the researchers describing the data collection. Further information can be found in the file download.
 
 "==================================================================
 Human Activity Recognition Using Smartphones Dataset
