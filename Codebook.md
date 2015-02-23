@@ -7,7 +7,7 @@ The number of columns are equal and in the same order so it's not a problem to u
 With all the raw data together, only the columns with mean() or std() in the name are subsetted.
 The activity names are then matched to their number in data table. The column with the activity numbers is removed.
 The summarise_each function from the dplyr package is applied and for each subject and activity,
-the physical variables are averaged. The previous step creates a new "tidyset" data table with the summary.
+the physical variables are averaged. The tidy data set,"UCIHARtidyDataSet.txt", is then saved to the working directory.
 There are 30 subjects and 6 activities, so there should be 180 observations in the "tidyset".
 
  $ Subject                : int  1 1 1 1 1 1 2 2 2 2 ...
